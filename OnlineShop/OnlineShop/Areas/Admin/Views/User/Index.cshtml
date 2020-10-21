@@ -1,0 +1,66 @@
+﻿@model PagedList.IPagedList<Model.EF.User>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layuot.cshtml";
+}
+
+<h2>Danh sách người dùng</h2>
+<div class="panel-body">
+    @using (Html.BeginForm("Index", "User", FormMethod.Get, new { @class = "d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" }))
+    {
+        <div class="input-group">
+            <input type="text" value="@ViewBag.SeachString" class="form-control bg-light border-0 small" name="SeachString">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+            </div>
+        </div>
+
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+
+            <thead>
+                <tr>
+
+                    <th rowspan="1" colspan="1">#</th>
+                    <th rowspan="1" colspan="1">UserName</th>
+                    <th rowspan="1" colspan="1">Passowrd</th>
+                    <th rowspan="1" colspan="1">Email</th>
+                    <th rowspan="1" colspan="1">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var list in Model)
+                {
+                    <tr role="row" class="odd">
+
+                        <td id="row_@list.ID">
+                            <a href="User/edit/@list.ID">sửa</a>
+                            @Ajax.ActionLink("Xóa", "Delete", new { @id = list.ID }, new AjaxOptions
+                            {
+                           Confirm = "Bạn có muốn xóa bảng ghi này hay không?",
+                           OnComplete = "$('#row_" + @list.ID + "').remove()",
+                           HttpMethod = "Delete"
+
+                       })
+                        </td>
+                        <td>@list.UserName</td>
+                        <td>@list.Password</td>
+                        <td>@list.Email</td>
+                        <td>(@list.Status)</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+        @Html.PagedListPager(Model, Page => Url.Action("index", new { Page ,ViewBag.SeachString}))
+    </div>
+</div>
+
+
+

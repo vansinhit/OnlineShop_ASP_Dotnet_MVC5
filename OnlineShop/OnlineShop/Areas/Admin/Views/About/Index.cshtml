@@ -1,0 +1,68 @@
+﻿@model PagedList.PagedList<Model.EF.About>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layuot.cshtml";
+}
+<div class="panel-body">
+    @using (Html.BeginForm("Index", "About", FormMethod.Get, new { @class = "d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" }))
+    {
+        <div class="input-group">
+            <input type="text" value="@ViewBag.SeachString" class="form-control bg-light border-0 small" name="SeachString">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+            </div>
+        </div>
+
+    }
+
+    <div class="table-responsive">
+        <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+
+            <thead>
+                <tr>
+                    <th rowspan="1" colspan="1">Name</th>
+                    <th rowspan="1" colspan="1">Metatile</th>
+                    <th rowspan="1" colspan="1">Images</th>
+                    <th rowspan="1" colspan="1">MetaDecriptions</th>
+                    <th rowspan="1" colspan="1">Status</th>
+                    <th rowspan="1" colspan="1">#</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var list in Model)
+                {
+                    <tr role="row" class="odd">
+
+                        <td>@list.Name</td>
+                        <td>@list.MetaTitle</td>
+                        <td>@list.Images</td>
+                        <td>@(list.MetaDecriptions)</td> 
+                        <td>(@list.Status)</td>
+                        <td id="row_@list.ID">
+                            <a href="/Admin/About/Edit/@list.ID">sửa</a> |
+                            @Ajax.ActionLink("Xóa", "Delete", new { @id = list.ID }, new AjaxOptions
+                       {
+                           Confirm = "bạn có muốn xóa bản ghi này không?",
+                           OnComplete = "$('#row_" + @list.ID + "').remove()",
+                           HttpMethod = "Delete"
+                       })
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+        @Html.PagedListPager(Model, page => Url.Action("index", new { page, @ViewBag.SeachString }))
+    </div>
+
+
+
+
+
+</div>
+

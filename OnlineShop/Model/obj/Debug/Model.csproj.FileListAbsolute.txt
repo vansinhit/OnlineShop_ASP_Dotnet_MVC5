@@ -1,0 +1,70 @@
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll.config
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\Model.pdb
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.xml
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\obj\Debug\Model.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\obj\Debug\Model.pdb
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.xml
+C:\Users\Sinh\Desktop\ASP.NET MVC\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\obj\Debug\Model.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\obj\Debug\Model.pdb
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll.config
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\Model.pdb
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.xml
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.xml
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\Sinh\Downloads\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll.config
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\Model.pdb
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.xml
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.xml
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\obj\Debug\Model.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\obj\Debug\Model.pdb
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\StaticResouce.dll
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\StaticResouce.pdb
+C:\Users\Sinh\Desktop\OnlineShop\OnlineShop\Model\bin\Debug\en\StaticResouce.resources.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll.config
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\Model.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\Model.pdb
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\StaticResouce.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\StaticResouce.pdb
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.xml
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.xml
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\PagedList.Mvc.xml
+D:\ASP.Net\OnlineShop\OnlineShop\Model\bin\Debug\en\StaticResouce.resources.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\ASP.Net\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\ASP.Net\OnlineShop\OnlineShop\Model\obj\Debug\Model.csproj.CopyComplete
+D:\ASP.Net\OnlineShop\OnlineShop\Model\obj\Debug\Model.dll
+D:\ASP.Net\OnlineShop\OnlineShop\Model\obj\Debug\Model.pdb

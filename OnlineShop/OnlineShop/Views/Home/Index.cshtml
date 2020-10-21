@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layuot.cshtml";
+}
+@section Slide {
+    <div class="header_slide">
+        
+        <div class="header_bottom_left">
+            <div class="categories">
+                @{ Html.RenderAction("ProductCategory", "Home");}
+            </div>
+        </div>
+            <div class="header_bottom_right">
+                <div class="slider">
+                    <div id="slider">
+                        @{ Html.RenderAction("Slide", "Home");}
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+}
+<div class="content_top">
+    <div class="heading">
+        <h3>Sản Phẩm mới</h3>
+    </div>
+    <div class="see">
+        <p><a href="#">Xem Tất Cả Sản Phẩm</a></p>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="section group">
+    @{Html.RenderAction("ProductNew", "Home");}
+</div>
+<div class="content_bottom">
+    <div class="heading">
+        <h3>Sản phẩm hốt</h3>
+    </div>
+    <div class="see">
+        <p><a href="#">Xem tất cả sản phẩm </a></p>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="section group">
+    @{ Html.RenderAction("ProductHot", "Home");}
+
+
+</div>
+

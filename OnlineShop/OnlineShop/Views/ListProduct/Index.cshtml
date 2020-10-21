@@ -1,0 +1,47 @@
+﻿@model PagedList.PagedList<Model.EF.Product>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layuot.cshtml";
+}
+
+    <div class="content">
+
+        <div class="section group">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <td>Name</td>
+                        <td>Images</td>
+                        <td>Price</td>
+                        <td>Status</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td><img src="@item.Images" /></td>
+                            <td>@(item.Price.HasValue?item.Price.Value.ToString("N0"):"Liên Hệ")</td>
+                            <td>@item.Status</td>
+                        </tr>
+                    }
+
+                </tbody>
+
+
+
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        @Html.PagedListPager(Model, Page => Url.Action("index", new { Page, ViewBag.SeachString, @class = "page-link" }))
+                        </li>
+
+                </ul>
+                </nav>
+        </div>
+    </div>
+
+

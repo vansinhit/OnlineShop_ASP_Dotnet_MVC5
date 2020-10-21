@@ -1,0 +1,54 @@
+﻿@model List<OnlineShop.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layuot.cshtml";
+}
+@section JsFooter{
+    <script src="/Assets/Client/js/Controller/CartHome.js"></script>
+}
+<div class="content">
+    <div class="section group">
+        @if (Model.Count > 0)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Mã Sp</td>
+                        <td>Tên Sp</td>
+                        <td>Ảnh Sp</td>
+                        <td>Số Lượng</td>
+                        <td>Đơn giá</td>
+                        <td>Thành Tiền</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Product.ID</td>
+                            <td>@item.Product.Name</td>
+                            <td><img src="@item.Product.Images" /></td>
+                            <td><input type="text" class="txtQuantity" data-id ="@item.Product.ID" value="@item.Quantity" /></td>
+                            <td>@(item.Product.Price.HasValue?item.Product.Price.Value.ToString("N0"): "Liên Hệ")</td>
+                            <td>@(((item.Product.Price.GetValueOrDefault(0))*item.Quantity).ToString("N0"))</td>
+                            <td><a href="#" class="btn-delete" data-id ="@item.Product.ID">xóa</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <button id="btnContinue">Tiếp tục mua hàng</button>
+            <button id="btnUpdate">Câp nhật giỏ hàng</button>
+            <button id="btnDeleteAll">xóa giỏ hàng</button>
+            <button id="btnPayment">Thanh toán</button>
+        }
+        else
+        {
+            <span class="alert alert-danger">không có sản phẩm nào trong giỏ hàng</span>
+        }
+    </div>
+</div>
+
+

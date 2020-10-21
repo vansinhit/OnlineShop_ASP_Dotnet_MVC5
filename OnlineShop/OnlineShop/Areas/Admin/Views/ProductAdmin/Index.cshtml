@@ -1,0 +1,51 @@
+﻿@model PagedList.PagedList<Model.EF.Product>
+    @using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layuot.cshtml";
+}
+
+    <div class="search_box">
+        @using (Html.BeginForm("Index", "ProductAdmin", FormMethod.Get))
+        {
+<input type="text" value="@ViewBag.SeachString" name="SeachString"><input type="submit" value="">
+        }
+
+    </div>
+    <div class="clear"></div>
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <td>Tên Sp</td>
+            <td>Ảnh Sp</td>
+            <td>Giá Tiền</td>
+            <td>Tình trạng</td>
+            <td>#</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td><img src="@item.Images" /></td>
+            <td>@(item.Price.HasValue?item.Price.Value.ToString("N0"):"Liên Hệ")</td>
+            <td>@item.Status</td>
+            <td id="row_@item.ID">
+                <a href="/Admin/ProductAdmin/edit/@item.ID">sửa</a>
+                @Ajax.ActionLink("Xóa", "Delete", new { @id = item.ID }, new AjaxOptions
+                {
+               Confirm = "Bạn có muốn xóa bảng ghi này hay không?",
+               OnComplete = "$('#row_" + item.ID + "').remove()",
+               HttpMethod = "Delete"
+
+           })
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
+@Html.PagedListPager(Model, Page => Url.Action("index", new { Page, ViewBag.SeachString }))
+

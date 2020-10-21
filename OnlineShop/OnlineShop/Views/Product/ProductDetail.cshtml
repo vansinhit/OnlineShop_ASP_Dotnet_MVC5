@@ -1,0 +1,130 @@
+﻿@model Model.EF.Product
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layuot.cshtml";
+    var productdetail = (List<Model.EF.Product>)ViewBag.ProductDetail;
+    var category = (Model.EF.ProductCategory)ViewBag.Category;
+}
+
+    <div class="main">
+        <div class="content">
+            <div class="content_top">
+                <div class="back-links">
+                    <p><a href="/">Trang chủ</a> &gt;&gt;&gt;&gt; <a href="/san-pham/@category.Metatile-@category.ID">@category.Name</a></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="section group">
+                <div class="cont-desc span_1_of_2">
+                    <div class="product-details">
+                        <div class="grid images_3_of_2">
+                            <div id="container">
+                                <div id="products_example">
+                                    <div id="products">
+                                        <div class="slides_container" style="overflow: hidden; position: relative; display: block;">
+                                            <div class="slides_control" style="position: relative; width: 1098px; height: 274px; left: -366px;">
+                                            <a href="#" target="_blank" style="position: absolute; top: 0px; left: 366px; z-index: 5;">
+                                                <img src="@Model.Images" alt=" "></a>
+                                           </div>
+
+                                        </div>
+                                        @*<ul class="pagination">
+                                            <li class="current"><a href="#0"><img src="/Assets/client/images/thumbnailslide-1.jpg" alt=" "></a></li>
+                                            <li><a href="#1"><img src="/Assets/client/images/thumbnailslide-2.jpg" alt=" "></a></li>
+                                            <li><a href="#2"><img src="/Assets/client/images/thumbnailslide-3.jpg" alt=" "></a></li>
+                                            <li><a href="#3"><img src="/Assets/client/images/thumbnailslide-4.jpg" alt=" "></a></li>
+                                            <li><a href="#4"><img src="/Assets/client/images/thumbnailslide-5.jpg" alt=" "></a></li>
+                                            <li><a href="#5"><img src="/Assets/client/images/thumbnailslide-6.jpg" alt=" "></a></li>
+                                        </ul>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc span_3_of_2">
+                            <h2>@Model.Name </h2>
+                            <p>@Model.Decriptions</p>
+                            <div class="price">
+                                <p>Giá: <span>@(Model.Price.HasValue?Model.Price.Value.ToString("N0"):"Liên Hệ")</span></p>
+                            </div>
+                            <div class="share-desc">
+                                <div class="share">
+                                    <p>Chia sẻ :</p>
+                                    <ul>
+                                        <li><a href="#"><img src="/Assets/client/images/facebook.png" alt=""></a></li>
+                                        <li><a href="#"><img src="/Assets/client/images/twitter.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="button"><span><a href="/them-vao-gio?productID=@Model.ID&quantityN=1">Thêm vào giỏ</a></span></div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="wish-list">
+                                <ul>
+                                    <li class="wish"><a href="#">Thêm vào mục yêu thích</a></li>
+                                    <li class="compare"><a href="#">Kiểm tra</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                
+                    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+    });
+                    </script>
+                    <div class="content_bottom">
+                        <div class="heading">
+                            <h3>Sản Phẩm Liên Quan</h3>
+                        </div>
+                        <div class="see">
+                            <p><a href="/san-pham">Xem Tất cả sản Phẩm</a></p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="section group">
+                        @foreach (var item in productdetail)
+                                {
+                                    var url = "/chi-tiet/" + item.MetaTitle + "-" + item.ID;
+                            <div class="grid_1_of_4 images_1_of_4">
+                                <a href="@url"><img src="@item.Images" alt=""></a>
+                                <div class="price" style="border:none">
+                                    <div class="add-cart" style="float:none">
+                                        <h4><a href="/them-vao-gio?productID=@item.ID&quantityN=1">Thêm vào giỏ</a></h4>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        }
+                 
+
+                    </div>
+                </div>
+                <div class="rightsidebar span_3_of_1">
+                    <ul class="side-w3ls">
+                        @{Html.RenderAction("ProductCategory", "Home");}
+                    </ul>
+                    <div class="subscribe">
+                        <h2>Newsletters Signup</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.......</p>
+                        <div class="signup">
+                            <form>
+                                <input type="text" value="E-mail address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail address';"><input type="submit" value="Sign up">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="community-poll">
+                        <h2>Community POll</h2>
+                        <p>What is the main reason for you to purchase products online?</p>
+                        <div class="poll">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
